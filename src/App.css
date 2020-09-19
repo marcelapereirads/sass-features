@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
-}
+.header {
+  height: 60px; }
+  .header__menu {
+    height: 100%;
+    display: flex; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.header {
+  background-color: #141411;
+  font-size: 28px;
+  font-weight: bold; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.menu__item:hover {
+  background-color: #2b2c2c; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  justify-content: flex-start; }
 
-.App-link {
-  color: #61dafb;
-}
+.header {
+  background-color: #141411;
+  font-size: 28px;
+  font-weight: bold; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.menu__item:hover {
+  background-color: #2b2c2c; }
+
+.menu__item {
+  height: 100%;
+  list-style-type: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; }
+  .menu__item a {
+    color: #fff;
+    text-decoration: none; }
+
+/*# sourceMappingURL=App.css.map */

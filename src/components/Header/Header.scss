@@ -1,0 +1,9 @@
+.header {
+    @extend %btn;
+    height: 60px;
+
+    &__menu {
+        height: 100%;
+        display: flex;
+    }
+}

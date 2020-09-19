@@ -1,0 +1,5 @@
+@import "../../../utils.scss";
+
+.menu__list {            
+    @include flexbox(row, center, flex-start);
+} 
