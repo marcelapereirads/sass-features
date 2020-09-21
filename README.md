@@ -1,6 +1,10 @@
-## Scripts
+# SASS Features
+
+Projeto desenvolvido inicialmente para uma apresentação sobre as funcionalidades do SASS
+
+# Scripts
 
 ### `yarn start`
 
-Runs the app in the development mode<br />
-Link access: [http://localhost:3000](http://localhost:3000)
+Executa o projeto em modo de desenvolvimento. <br/>
+Link de acesso: [http://localhost:3000](http://localhost:3000)
