@@ -4,10 +4,6 @@ Projeto desenvolvido inicialmente para uma apresentação sobre as funcionalidad
 
 # Scripts
 
-Projeto desenvolvido inicialmente para uma apresentação sobre as funcionalidades do SASS
-
-# Scripts
-
 Clonar o projeto:
 ###  `git clone "https://github.com/marcelapereirads/sass-features"`
 
