@@ -1,0 +1,39 @@
+@import "../../utils.scss";
+
+%code__viewer {
+    width: 50%;
+    border: 2px solid;
+    background-color: $white;
+    color: #36363f;
+    font-size: 17px;
+}
+
+@mixin code__column($isRight) {
+    @extend %code__viewer;
+    background-color: $tertiary-color;
+
+    @if $isRight {
+        margin-right: 20px;
+        margin-left: 40px;
+    } @else {
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+}
+
+.code {
+    &__title {
+        background-color: $secondary-color;
+        color: $white;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    &__right {
+        @include code__column(true);
+    }
+
+    &__left {
+        @include code__column(false);
+    }
+}

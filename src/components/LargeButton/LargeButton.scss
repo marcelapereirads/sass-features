@@ -11,11 +11,11 @@
     padding: 15px;
 
     a {
-        color: $secondary-color;
+        color: $white;
         text-decoration: none;
     }
 }
 
 .large-button:hover {
-    @extend %btn-hover;
+    @extend %btn--hover;
 } 

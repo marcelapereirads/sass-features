@@ -3,7 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////
 
 $primary-color: #141411;
-$secondary-color: #fff;
+$secondary-color: #2b2c2c;
+$tertiary-color: #e2e2e2;
+$white: #fff;
 $hover-color: #2b2c2c;
 
 ////////////////////////////////////////////////////////////////////////////
@@ -21,7 +23,7 @@ $hover-color: #2b2c2c;
     font-weight: bold;
 }
 
-%btn-hover {
+%btn--hover {
     background-color: $hover-color;
 }  
 

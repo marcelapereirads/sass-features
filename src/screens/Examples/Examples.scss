@@ -1,0 +1,8 @@
+.content {
+    margin: 25px;
+
+    &__examples {
+        @include flexbox(row, flex-start, center);
+        margin: 40px auto;
+    }
+}

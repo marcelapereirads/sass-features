@@ -7,11 +7,11 @@
     @include flexbox(row, center, flex-start);
 
     a {
-        color: $secondary-color;
+        color: $white;
         text-decoration: none;
     }
 }
 
 .menu__item:hover {
-    @extend %btn-hover;
+    @extend %btn--hover;
 }

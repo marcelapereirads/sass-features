@@ -2,4 +2,11 @@
 @import "./components/Header/MenuList/MenuList";
 @import "./components/Header/MenuList/MenuItem/MenuItem";
 @import "./components/LargeButton/LargeButton";
+@import "./components/CodeViewer/CodeViewer.scss";
 @import "./screens/Home/Home.scss";
+@import "./screens/Examples/Examples.scss";
+
+.App {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
