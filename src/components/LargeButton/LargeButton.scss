@@ -1,0 +1,21 @@
+@import "../../utils.scss";
+
+.large-button {
+    @extend %btn;
+    @include flexbox(row, center, center);
+    width: 250px;
+    height: 60px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+.large-button:hover {
+    @extend %btn-hover;
+} 

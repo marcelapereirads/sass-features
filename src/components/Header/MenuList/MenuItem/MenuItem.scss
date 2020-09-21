@@ -3,8 +3,7 @@
 .menu__item {
     height: 100%;
     list-style-type: none;
-    padding-right: 15px; //
-    padding-left: 15px; //
+    padding: 0 15px;
     @include flexbox(row, center, flex-start);
 
     a {

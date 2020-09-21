@@ -21,7 +21,7 @@ class MenuList extends Component {
     render() {
         return (
             <ul className="menu__list">
-                {pages.map((page) => <Item name={page.name} url={page.url} />)}
+                {pages.map((page) => <Item key={page.name} name={page.name} url={page.url} />)}
             </ul>
         );
     }

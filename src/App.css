@@ -4,13 +4,30 @@
     height: 100%;
     display: flex; }
 
-.header {
+.header, .large-button {
   background-color: #141411;
   font-size: 28px;
   font-weight: bold; }
 
-.menu__item:hover {
+.menu__item:hover, .large-button:hover {
   background-color: #2b2c2c; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  padding: 15px; }
+  .row .col30 {
+    width: 30%; }
+  .row .col70 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    width: 70%; }
 
 .menu__list {
   display: flex;
@@ -18,19 +35,35 @@
   align-items: center;
   justify-content: flex-start; }
 
-.header {
+.header, .large-button {
   background-color: #141411;
   font-size: 28px;
   font-weight: bold; }
 
-.menu__item:hover {
+.menu__item:hover, .large-button:hover {
   background-color: #2b2c2c; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  padding: 15px; }
+  .row .col30 {
+    width: 30%; }
+  .row .col70 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    width: 70%; }
 
 .menu__item {
   height: 100%;
   list-style-type: none;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,5 +71,73 @@
   .menu__item a {
     color: #fff;
     text-decoration: none; }
+
+.header, .large-button {
+  background-color: #141411;
+  font-size: 28px;
+  font-weight: bold; }
+
+.menu__item:hover, .large-button:hover {
+  background-color: #2b2c2c; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  padding: 15px; }
+  .row .col30 {
+    width: 30%; }
+  .row .col70 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    width: 70%; }
+
+.large-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 60px;
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px; }
+  .large-button a {
+    color: #fff;
+    text-decoration: none; }
+
+.header, .large-button {
+  background-color: #141411;
+  font-size: 28px;
+  font-weight: bold; }
+
+.menu__item:hover, .large-button:hover {
+  background-color: #2b2c2c; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  padding: 15px; }
+  .row .col30 {
+    width: 30%; }
+  .row .col70 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    width: 70%; }
+
+.sass-logo {
+  max-width: 100%; }
 
 /*# sourceMappingURL=App.css.map */

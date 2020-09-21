@@ -1,6 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////
 // Variáveis                                                              //
 ////////////////////////////////////////////////////////////////////////////
+
 $primary-color: #141411;
 $secondary-color: #fff;
 $hover-color: #2b2c2c;
@@ -34,4 +35,24 @@ $hover-color: #2b2c2c;
     flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
+}
+
+////////////////////////////////////////////////////////////////////////////
+// Classes genéricas                                                      //
+////////////////////////////////////////////////////////////////////////////
+
+.row {
+    @include flexbox(row, center, center);
+    margin: 40px;
+    padding: 15px;
+
+    .col30 {
+        width: 30%;
+    }
+
+    .col70 {
+        @include flexbox(column, center, center);
+        justify-content: center;
+        width: 70%;
+    }
 }
