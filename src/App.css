@@ -1,3 +1,4 @@
+@import url(./reset.css);
 .header {
   height: 60px; }
   .header__menu {
@@ -194,6 +195,31 @@
     align-items: flex-start;
     justify-content: center;
     margin: 40px auto; }
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 60px; }
+  .feature__item {
+    padding: 1%;
+    border: solid #2b2c2c; }
+    @media (min-width: 720px) {
+      .feature__item {
+        margin: 2%;
+        width: 600px; } }
+    @media (max-width: 720px) {
+      .feature__item {
+        width: 80%;
+        margin: 20px auto; } }
+  .feature__text {
+    background-color: #e2e2e2;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 17px; }
 
 .App {
   font-family: Arial, Helvetica, sans-serif;

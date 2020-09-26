@@ -1,0 +1,36 @@
+$default-padding: 1%;
+$default-margin: 2%;
+$default-width: 600px;
+
+@function padding-calc() {
+    @return ($default-width) / 10;
+}
+
+.feature {
+    @include flexbox(row, flex-start, space-between);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 padding-calc();
+
+    &__item {
+        padding: $default-padding;
+        border: solid $secondary-color;
+
+        @media (min-width: 720px) {
+            margin: 2%;
+            width: $default-width;
+        }
+        
+        @media (max-width: 720px) {
+            width: 80%;
+            margin: 20px auto;
+        }
+    }
+
+    &__text {
+        background-color: $tertiary-color;
+        margin-top: 10px;
+        padding: 0 10px;
+        font-size: 17px;
+    }
+}

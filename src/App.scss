@@ -1,3 +1,4 @@
+@import "./reset.css";
 @import "./components/Header/Header";
 @import "./components/Header/MenuList/MenuList";
 @import "./components/Header/MenuList/MenuItem/MenuItem";
@@ -5,6 +6,7 @@
 @import "./components/CodeViewer/CodeViewer.scss";
 @import "./screens/Home/Home.scss";
 @import "./screens/Examples/Examples.scss";
+@import "./screens/Features/Features.scss";
 
 .App {
     font-family: Arial, Helvetica, sans-serif;
