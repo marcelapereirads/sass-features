@@ -1,9 +1,37 @@
+@import "../../utils.scss";
+
 .header {
     @extend %btn;
     height: 60px;
 
-    &__menu {
-        height: 100%;
-        display: flex;
+}
+
+@media (min-width: $mobile-width) {
+    .header {
+        &__hamburger {
+            display: none;
+        }
+
+        &__menu {
+            height: 100%;
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header {
+        &__hamburger {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+        &__menu {
+            background-color: $primary-color;
+        }
     }
 }

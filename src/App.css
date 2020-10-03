@@ -1,10 +1,48 @@
 @import url(./reset.css);
+.header, .large-button {
+  background-color: #141411;
+  font-size: 28px;
+  font-weight: bold; }
+
+.menu__item:hover, .large-button:hover {
+  background-color: #2b2c2c; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  padding: 15px; }
+  .row .col30 {
+    width: 30%; }
+  .row .col70 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    width: 70%; }
+
 .header {
   height: 60px; }
+
+@media (min-width: 720px) {
+  .header__hamburger {
+    display: none; }
   .header__menu {
     height: 100%;
-    display: flex; }
-
+    display: flex; } }
+@media (max-width: 720px) {
+  .header__hamburger {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px; }
+  .header__menu {
+    background-color: #141411; } }
 .header, .large-button {
   background-color: #141411;
   font-size: 28px;
