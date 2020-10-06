@@ -1,5 +1,13 @@
 @import "../../../utils.scss";
 
-.menu__list {            
-    @include flexbox(row, center, flex-start);
-} 
+@media (min-width: $mobile-width) {
+    .menu__list {            
+        @include flexbox(row, center, flex-start);
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .menu__list {            
+        @include flexbox(column, flex-start, center);
+    }
+}
