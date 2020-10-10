@@ -9,5 +9,7 @@
 @media (max-width: $mobile-width) {
     .menu__list {            
         @include flexbox(column, flex-start, center);
+        width: 100%;
+        padding: 1% 0;
     }
 }

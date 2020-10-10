@@ -2,6 +2,7 @@
 
 .menu__item {
     height: 100%;
+    width: 100%;
     list-style-type: none;
     padding: 0 15px;
     @include flexbox(row, center, flex-start);
