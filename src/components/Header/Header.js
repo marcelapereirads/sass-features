@@ -12,15 +12,12 @@ class Header extends Component {
             showMenu: false
         }
 
-        this.emitOpenEvent = this.emitOpenEvent.bind(this);
+        this.changeMenuState = this.changeMenuState.bind(this);
     }
 
-    setShowMenu() {
-        this.setState({showMenu: !this.state.showMenu});
-    }
-
-    emitOpenEvent() {
+    changeMenuState() {
         this.props.menuOpened(!this.state.showMenu);
+        this.setState({ showMenu: !this.state.showMenu })
     }
 
     render() {
@@ -28,12 +25,13 @@ class Header extends Component {
             <header className="header">
                 <div className="header__hamburger" 
                     onClick={() => {
-                        this.emitOpenEvent()
-                        this.setState({ showMenu: !this.state.showMenu });                        
+                        this.changeMenuState();                        
                     }}>
                     <HamburgerMenuIcon />
                 </div>
-                <nav className={ this.state.showMenu ? 'header__menu' : 'header__menu header__menu--hide' } >
+                <nav className={ this.state.showMenu ? 'header__menu' : 'header__menu header__menu--hide' } onClick={() => {
+                        this.changeMenuState();                        
+                    }} >
                     <MenuList />
                 </nav>
             </header>
