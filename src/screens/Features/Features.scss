@@ -15,6 +15,7 @@ $default-width: 600px;
     &__item {
         padding: $default-padding;
         border: solid $secondary-color;
+        overflow-x: auto;
 
         @media (min-width: $mobile-width) {
             margin: 2%;
@@ -32,5 +33,7 @@ $default-width: 600px;
         margin-top: 10px;
         padding: 0 10px;
         font-size: 17px;
+        width: fit-content;
+        min-width: 100%;
     }
 }

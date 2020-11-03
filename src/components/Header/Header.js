@@ -29,7 +29,8 @@ class Header extends Component {
                     }}>
                     <HamburgerMenuIcon />
                 </div>
-                <nav className={ this.state.showMenu ? 'header__menu' : 'header__menu header__menu--hide' } onClick={() => {
+                <nav className={ this.state.showMenu ? 'header__menu' : 'header__menu header__menu--hide' }
+                    onClick={() => {
                         this.changeMenuState();                        
                     }} >
                     <MenuList />

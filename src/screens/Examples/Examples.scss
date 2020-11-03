@@ -6,3 +6,9 @@
         margin: 40px auto;
     }
 }
+
+@media(max-width: $mobile_width) {
+    .content__examples {
+        @include flexbox(column, flex-start, center);
+    }
+}

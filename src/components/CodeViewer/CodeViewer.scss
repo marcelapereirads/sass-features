@@ -11,6 +11,7 @@
 @mixin code__column($isRight) {
     @extend %code__viewer;
     background-color: $tertiary-color;
+    overflow-x: auto;
 
     @if $isRight {
         margin-right: 20px;
@@ -27,6 +28,7 @@
         color: $white;
         font-weight: bold;
         padding: 5px;
+        min-width: 350px;
     }
 
     &__right {
@@ -35,5 +37,12 @@
 
     &__left {
         @include code__column(false);
+    }
+}
+
+@media(max-width: $mobile_width) {
+    .code__right, .code__left {
+        width: 100%;
+        margin: 8px auto;
     }
 }

@@ -7,7 +7,9 @@ class CodeViewer extends Component {
                 <div className="code__title">
                     {this.props.title}
                 </div>
-                {this.props.children}
+                <p>
+                    {this.props.children}
+                </p>
             </pre>
         );
     }

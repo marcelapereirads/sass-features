@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 $primary-color: #141411;
-$secondary-color: #2b2c2c;
+$secondary-color: #474A51;
 $tertiary-color: #e2e2e2;
 $white: #fff;
 $hover-color: #2b2c2c;
@@ -43,19 +43,30 @@ $mobile-width: 720px;
 ////////////////////////////////////////////////////////////////////////////
 // Classes genéricas                                                      //
 ////////////////////////////////////////////////////////////////////////////
-
-.row {
-    @include flexbox(row, center, center);
-    margin: 40px;
-    padding: 15px;
-
-    .col30 {
-        width: 30%;
+@media(min-width: $mobile_width) {
+    .row {
+        @include flexbox(row, center, center);
+        margin: 40px;
+        padding: 15px;
+        
+        .col30 {
+            width: 30%;
+        }
+        
+        .col70 {
+            @include flexbox(column, center, center);
+            justify-content: center;
+            width: 70%;
+        }
     }
+}
 
-    .col70 {
+@media(max-width: $mobile_width) {
+    .row {
         @include flexbox(column, center, center);
-        justify-content: center;
-        width: 70%;
+
+        .col30 {
+            width: auto;
+        }
     }
 }
